@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-pickle_in = open("/content/drive/My Drive/pjmt2.pkl","rb")
+pickle_in = open("pjmt2.pkl","rb")
 model=pickle.load(pickle_in)
-dataset= pd.read_csv('/content/drive/My Drive/clustering dataset1.csv')
+dataset= pd.read_csv('clustering dataset1.csv')
 X = dataset.iloc[:,0:8].values
 
 # Taking care of missing data
